@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectId" id="1YB5kgygJHKL0Q9HC8ND0Upz30J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SentimentAnalyzer" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="bg.sofia.uni.fmi.jira.issues" />
+      <recent name="bg.sofia.uni.fmi.jira.interfaces" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.SampleIssueTrackerTest">
+    <configuration name="SampleIssueTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IssueTracker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleIssueTrackerTest.tesFindAllBeforeDueDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IssueTracker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="METHOD_NAME" value="tesFindAllBeforeDueDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleIssueTrackerTest.testFianAllByPriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IssueTracker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="METHOD_NAME" value="testFianAllByPriority" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleIssueTrackerTest.testFindAllBetween" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IssueTracker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="METHOD_NAME" value="testFindAllBetween" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SampleIssueTrackerTest.testFindAllByStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="IssueTracker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="METHOD_NAME" value="testFindAllByStatus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SampleIssueTrackerTest" />
+        <item itemvalue="JUnit.SampleIssueTrackerTest.tesFindAllBeforeDueDate" />
+        <item itemvalue="JUnit.SampleIssueTrackerTest.testFindAllByStatus" />
+        <item itemvalue="JUnit.SampleIssueTrackerTest.testFianAllByPriority" />
+        <item itemvalue="JUnit.SampleIssueTrackerTest.testFindAllBetween" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="" />
+      <created>1563807045213</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563807045213</updated>
+      <workItem from="1563807048247" duration="3167000" />
+      <workItem from="1563865134651" duration="24870000" />
+      <workItem from="1563897742454" duration="1364000" />
+      <workItem from="1563952896629" duration="35000" />
+      <workItem from="1564384986974" duration="642000" />
+      <workItem from="1582403292595" duration="121000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 13m 59s.xml">
+      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 14m 02s.xml">
+      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 15m 32s.xml">
+      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest_testFindAllByStatus - 2019.07.23 at 19h 16m 46s.xml">
+      <configuration name="SampleIssueTrackerTest.testFindAllByStatus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest_testFindAllByStatus - 2019.07.23 at 19h 16m 53s.xml">
+      <configuration name="SampleIssueTrackerTest.testFindAllByStatus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 16m 57s.xml">
+      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest_tesFindAllBeforeDueDate - 2019.07.23 at 19h 18m 30s.xml">
+      <configuration name="SampleIssueTrackerTest.tesFindAllBeforeDueDate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest_tesFindAllBeforeDueDate - 2019.07.23 at 19h 19m 02s.xml">
+      <configuration name="SampleIssueTrackerTest.tesFindAllBeforeDueDate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 19m 06s.xml">
+      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SampleIssueTrackerTest - 2019.07.24 at 10h 22m 02s.xml">
+      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/SampleIssueTrackerTest.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>IssueTracker</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
