@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="" />
+    <list default="true" id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/generators/IdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/issue/properties/IssuePriority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/issue/properties/IssueResolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/issue/properties/IssueStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/issue/properties/IssueType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GenerateId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Jira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jira.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ValidateNullValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/IssuePriority.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/IssueResolution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/IssueStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/IssueType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/IIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IIssue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/IssueTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IssueTracker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/issues/Bug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Bug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/issues/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Issue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/issues/NewFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/NewFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/issues/ScheduledIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/ScheduledIssue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/issues/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/issues/exceptions/InvalidReporterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/InvalidReporterException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SampleIssueTrackerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SampleIssueTrackerTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +48,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
   <component name="ProjectId" id="1YB5kgygJHKL0Q9HC8ND0Upz30J" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -37,7 +56,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SentimentAnalyzer" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,9 +69,13 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="components" />
+      <recent name="users" />
+      <recent name="" />
       <recent name="bg.sofia.uni.fmi.jira.issues" />
       <recent name="bg.sofia.uni.fmi.jira.interfaces" />
     </key>
@@ -144,40 +168,9 @@
       <workItem from="1563952896629" duration="35000" />
       <workItem from="1564384986974" duration="642000" />
       <workItem from="1582403292595" duration="121000" />
+      <workItem from="1590259225036" duration="4723000" />
     </task>
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 13m 59s.xml">
-      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 14m 02s.xml">
-      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 15m 32s.xml">
-      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest_testFindAllByStatus - 2019.07.23 at 19h 16m 46s.xml">
-      <configuration name="SampleIssueTrackerTest.testFindAllByStatus" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest_testFindAllByStatus - 2019.07.23 at 19h 16m 53s.xml">
-      <configuration name="SampleIssueTrackerTest.testFindAllByStatus" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 16m 57s.xml">
-      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest_tesFindAllBeforeDueDate - 2019.07.23 at 19h 18m 30s.xml">
-      <configuration name="SampleIssueTrackerTest.tesFindAllBeforeDueDate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest_tesFindAllBeforeDueDate - 2019.07.23 at 19h 19m 02s.xml">
-      <configuration name="SampleIssueTrackerTest.tesFindAllBeforeDueDate" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest - 2019.07.23 at 19h 19m 06s.xml">
-      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SampleIssueTrackerTest - 2019.07.24 at 10h 22m 02s.xml">
-      <configuration name="SampleIssueTrackerTest" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -187,22 +180,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/SampleIssueTrackerTest.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>

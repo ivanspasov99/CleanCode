@@ -3,7 +3,7 @@ package bg.sofia.uni.fmi.jira.issues;
 import bg.sofia.uni.fmi.jira.Component;
 import bg.sofia.uni.fmi.jira.User;
 import bg.sofia.uni.fmi.jira.ValidateNullValues;
-import bg.sofia.uni.fmi.jira.enums.IssuePriority;
+import issue.enums.IssuePriority;
 import bg.sofia.uni.fmi.jira.issues.exceptions.InvalidReporterException;
 
 import java.time.LocalDateTime;

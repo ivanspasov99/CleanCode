@@ -1,11 +1,11 @@
-package bg.sofia.uni.fmi.jira.interfaces;
+package interfaces;
 
-import bg.sofia.uni.fmi.jira.Component;
-import bg.sofia.uni.fmi.jira.enums.IssuePriority;
-import bg.sofia.uni.fmi.jira.enums.IssueResolution;
-import bg.sofia.uni.fmi.jira.enums.IssueStatus;
-import bg.sofia.uni.fmi.jira.enums.IssueType;
-import bg.sofia.uni.fmi.jira.issues.Issue;
+import components.Component;
+import issue.properties.IssuePriority;
+import issue.properties.IssueResolution;
+import issue.properties.IssueStatus;
+import issue.properties.IssueType;
+import issues.Issue;
 
 import java.time.LocalDateTime;
 

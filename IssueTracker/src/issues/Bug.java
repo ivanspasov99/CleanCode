@@ -1,9 +1,9 @@
-package bg.sofia.uni.fmi.jira.issues;
+package issues;
 
-import bg.sofia.uni.fmi.jira.Component;
+import components.Component;
 import bg.sofia.uni.fmi.jira.User;
-import bg.sofia.uni.fmi.jira.enums.IssuePriority;
-import bg.sofia.uni.fmi.jira.enums.IssueType;
+import issue.properties.IssuePriority;
+import issue.properties.IssueType;
 import bg.sofia.uni.fmi.jira.issues.exceptions.InvalidReporterException;
 
 public class Bug extends Issue {

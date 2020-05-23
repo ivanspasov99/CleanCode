@@ -1,4 +1,4 @@
-package bg.sofia.uni.fmi.jira;
+package components;
 
 public class Component {
     private String name;

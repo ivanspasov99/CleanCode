@@ -6,13 +6,13 @@ import bg.sofia.uni.fmi.jira.issues.Task;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import bg.sofia.uni.fmi.jira.Component;
+import components.Component;
 import bg.sofia.uni.fmi.jira.Jira;
 import bg.sofia.uni.fmi.jira.User;
-import bg.sofia.uni.fmi.jira.enums.IssuePriority;
-import bg.sofia.uni.fmi.jira.enums.IssueResolution;
+import issue.properties.IssuePriority;
+import issue.properties.IssueResolution;
 import bg.sofia.uni.fmi.jira.enums.IssueStatus;
-import bg.sofia.uni.fmi.jira.enums.IssueType;
+import issue.properties.IssueType;
 import bg.sofia.uni.fmi.jira.interfaces.IssueTracker;
 import bg.sofia.uni.fmi.jira.issues.Issue;
 import bg.sofia.uni.fmi.jira.issues.exceptions.InvalidReporterException;

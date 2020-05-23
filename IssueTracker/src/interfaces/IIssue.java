@@ -1,13 +1,30 @@
-package bg.sofia.uni.fmi.jira.interfaces;
+package interfaces;
 
 import java.time.LocalDateTime;
-import bg.sofia.uni.fmi.jira.enums.IssueResolution;
-import bg.sofia.uni.fmi.jira.enums.IssueStatus;
+
+import components.Component;
+
+import issue.properties.IssuePriority;
+import issue.properties.IssueResolution;
+import issue.properties.IssueStatus;
+import issue.properties.IssueType;
+
+import users.User;
 
 public interface IIssue {
-    void resolve(IssueResolution resolution);
+
+    void setResolution(IssueResolution resolution);
     void setStatus(IssueStatus status);
+    void setPriority(IssuePriority priority);
+
     String getId();
+    String getDescription();
+
+    User getReporter();
+
+    Component getComponent();
+
     LocalDateTime getCreatedAt();
-    LocalDateTime getLastModifiedAt();
+    LocalDateTime getUpdatedAt();
+
 }

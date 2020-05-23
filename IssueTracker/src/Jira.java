@@ -1,9 +1,9 @@
 package bg.sofia.uni.fmi.jira;
 
-import bg.sofia.uni.fmi.jira.enums.IssuePriority;
-import bg.sofia.uni.fmi.jira.enums.IssueResolution;
+import issue.enums.IssuePriority;
+import issue.enums.IssueResolution;
 import bg.sofia.uni.fmi.jira.enums.IssueStatus;
-import bg.sofia.uni.fmi.jira.enums.IssueType;
+import issue.enums.IssueType;
 import bg.sofia.uni.fmi.jira.interfaces.IssueTracker;
 import bg.sofia.uni.fmi.jira.issues.Bug;
 import bg.sofia.uni.fmi.jira.issues.Issue;

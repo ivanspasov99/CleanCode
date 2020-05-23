@@ -1,7 +1,9 @@
-package bg.sofia.uni.fmi.jira.issues.exceptions;
+package exceptions;
 
 public class InvalidReporterException extends Exception {
+
     public InvalidReporterException(String message) {
-        super(message);
+        super("message");
     }
+
 }

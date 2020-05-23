@@ -1,10 +1,10 @@
-package bg.sofia.uni.fmi.jira;
+package users;
 
 public class User {
     private String userName;
 
     public User(String userName) {
-        ValidateNullValues.validatePar(new Object[] { userName });
+        //validators.ValidateNullValues.validatePar(new Object[] { userName });
         this.userName = userName;
     }
 
