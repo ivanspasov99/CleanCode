@@ -1,22 +1,22 @@
-package bg.sofia.uni.fmi.jira;
+package jira;
 
-import issue.enums.IssuePriority;
-import issue.enums.IssueResolution;
-import bg.sofia.uni.fmi.jira.enums.IssueStatus;
-import issue.enums.IssueType;
-import bg.sofia.uni.fmi.jira.interfaces.IssueTracker;
-import bg.sofia.uni.fmi.jira.issues.Bug;
-import bg.sofia.uni.fmi.jira.issues.Issue;
-import bg.sofia.uni.fmi.jira.issues.ScheduledIssue;
-
+import interfaces.IssueTracker;
+import issues.Issue;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class Jira implements IssueTracker {
-    private Issue issues[];
-    public Jira(Issue[] issues) {
+    // we can add Issues, to delete specific issues... etc
+    private List<Issue> issues;
+
+    public Jira(List<Issue> issues) {
         ValidateNullValues.validatePar(new Object[] { issues } ); // checking if issues at all is not null
         this.issues = issues;
+    }
+
+    public Jira() {
+        // init empty list
     }
 
     @Override

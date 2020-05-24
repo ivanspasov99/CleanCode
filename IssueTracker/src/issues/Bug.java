@@ -1,25 +1,23 @@
 package issues;
 
 import components.Component;
-import bg.sofia.uni.fmi.jira.User;
+
+import exceptions.InvalidReporterException;
+
 import issue.properties.IssuePriority;
 import issue.properties.IssueType;
-import bg.sofia.uni.fmi.jira.issues.exceptions.InvalidReporterException;
+
+import users.User;
+
 
 public class Bug extends Issue {
-    private static final IssueType type = IssueType.BUG;
+    // we can add end date to fix
+    // we can add developer to fix who will be assign by manager only...
+    public static final IssueType TYPE = IssueType.BUG;
 
     public Bug(IssuePriority priority, Component component, User reporter, String description) throws InvalidReporterException {
+
         super(priority, component, reporter, description);
-    }
 
-    @Override
-    public IssueType getType() {
-        return type;
-    }
-
-    @Override
-    public String getId() {
-        return super.getId();
     }
 }

@@ -3,6 +3,7 @@ import static org.junit.Assert.assertEquals;
 
 import bg.sofia.uni.fmi.jira.issues.Bug;
 import bg.sofia.uni.fmi.jira.issues.Task;
+import jira.Jira;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

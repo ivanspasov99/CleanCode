@@ -1,22 +1,24 @@
-package bg.sofia.uni.fmi.jira.issues;
+package issues;
 
 import components.Component;
-import bg.sofia.uni.fmi.jira.User;
+
+import exceptions.InvalidReporterException;
 import issue.properties.IssuePriority;
 import issue.properties.IssueType;
-import bg.sofia.uni.fmi.jira.issues.exceptions.InvalidReporterException;
+import users.User;
+
 
 import java.time.LocalDateTime;
 
 public class Task extends ScheduledIssue {
-    private final static IssueType type = IssueType.TASK;
+    // must be assigned in the beginning
+    // we do not need reporter here
+    private static final IssueType TYPE = IssueType.TASK;
 
     public Task(IssuePriority priority, Component component, User reporter, String description, LocalDateTime dueTime) throws InvalidReporterException {
+
         super(priority, component, reporter, description, dueTime);
+
     }
 
-    @Override
-    public IssueType getType() {
-        return type;
-    }
 }

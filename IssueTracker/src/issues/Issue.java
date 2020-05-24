@@ -24,7 +24,7 @@ import java.time.LocalDateTime;
 
 
 public abstract class Issue implements IIssue {
-
+    // we can make separate class for issue properties
     private IssuePriority priority;
     private IssueStatus status = IssueStatus.OPEN;
     private IssueResolution resolution = IssueResolution.UNRESOLVED;
@@ -54,7 +54,7 @@ public abstract class Issue implements IIssue {
 
         this.description = description;
 
-        this.ID = component.getShortName() + IdGenerator.generateUniqueId();
+        this.ID = component.getAbbreviation() + IdGenerator.generateUniqueId();
 
         initDateProperties();
     }

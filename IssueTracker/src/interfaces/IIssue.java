@@ -7,7 +7,6 @@ import components.Component;
 import issue.properties.IssuePriority;
 import issue.properties.IssueResolution;
 import issue.properties.IssueStatus;
-import issue.properties.IssueType;
 
 import users.User;
 

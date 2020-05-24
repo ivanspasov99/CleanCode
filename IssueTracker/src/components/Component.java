@@ -1,23 +1,30 @@
 package components;
 
+import users.User;
+
+import validators.Validator;
+
 public class Component {
+
     private String name;
-    private String shortName;
+    private String abbreviation;
+
     private User creator;
 
-    public Component(String name, String shortName, User creator) {
-        ValidateNullValues.validatePar(new Object[] {name, shortName, creator });
+    public Component(String name, String abbreviation, User creator) throws IllegalArgumentException {
+        Validator.validateNullValues(name, abbreviation, creator );
+
         this.name = name;
-        this.shortName = shortName;
+        this.abbreviation = abbreviation;
+
         this.creator = creator;
     }
 
     public String getName() {
         return name;
     }
-
-    public String getShortName() {
-        return shortName;
+    public String getAbbreviation() {
+        return abbreviation;
     }
 
     public User getCreator() {

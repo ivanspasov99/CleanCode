@@ -1,23 +1,33 @@
-package bg.sofia.uni.fmi.jira.issues;
+package issues;
 
-import bg.sofia.uni.fmi.jira.Component;
-import bg.sofia.uni.fmi.jira.User;
-import bg.sofia.uni.fmi.jira.ValidateNullValues;
-import issue.enums.IssuePriority;
-import bg.sofia.uni.fmi.jira.issues.exceptions.InvalidReporterException;
+
+import components.Component;
+
+import exceptions.InvalidReporterException;
+
+import issue.properties.IssuePriority;
+
+import users.User;
+
+import validators.Validator;
 
 import java.time.LocalDateTime;
 
 public abstract class ScheduledIssue extends Issue {
+
     private final LocalDateTime dueTime;
 
-    public ScheduledIssue(IssuePriority priority, Component component, User reporter, String description, LocalDateTime dueTime) throws InvalidReporterException {
+    public ScheduledIssue(IssuePriority priority, Component component, User reporter, String description, LocalDateTime dueTime) throws InvalidReporterException, IllegalArgumentException {
+
         super(priority, component, reporter, description);
-        ValidateNullValues.validatePar(new Object[]{ dueTime });
+
+        Validator.validateNullValues(dueTime);
+
         this.dueTime = dueTime;
     }
 
     public LocalDateTime getDueTime() {
         return dueTime;
     }
+
 }

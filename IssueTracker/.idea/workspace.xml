@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/generators/IdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/issue/properties/IssuePriority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/issue/properties/IssueResolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/issue/properties/IssueStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/issue/properties/IssueType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenerateId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Jira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jira.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ValidateNullValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/IssuePriority.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/IssueResolution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/IssueStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/enums/IssueType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Jira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jira/Jira.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Component.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/IIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IIssue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/IssueTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IssueTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/issues/Bug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Bug.java" afterDir="false" />
@@ -24,7 +12,8 @@
       <change beforePath="$PROJECT_DIR$/src/issues/NewFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/NewFeature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/issues/ScheduledIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/ScheduledIssue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/issues/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/exceptions/InvalidReporterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/InvalidReporterException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validators/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/validators/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/SampleIssueTrackerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SampleIssueTrackerTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -169,6 +158,7 @@
       <workItem from="1564384986974" duration="642000" />
       <workItem from="1582403292595" duration="121000" />
       <workItem from="1590259225036" duration="4723000" />
+      <workItem from="1590341429554" duration="2040000" />
     </task>
     <servers />
   </component>

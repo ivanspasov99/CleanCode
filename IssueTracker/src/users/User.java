@@ -1,14 +1,20 @@
 package users;
 
+import validators.Validator;
+
 public class User {
-    private String userName;
 
-    public User(String userName) {
-        //validators.ValidateNullValues.validatePar(new Object[] { userName });
-        this.userName = userName;
+    private String name;
+
+    public User(String name) throws IllegalArgumentException {
+
+        Validator.validateNullValues(name);
+        this.name = name;
+
     }
 
-    public String getUserName() {
-        return userName;
+    public String getName() {
+        return name;
     }
+
 }
