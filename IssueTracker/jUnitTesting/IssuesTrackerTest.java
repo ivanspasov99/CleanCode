@@ -88,20 +88,29 @@ public class IssuesTrackerTest {
 		assertEquals(0, result.size());
 	}
 
-	/*@Test
-	public void testFindAllByResolution() {
-		List<Issue  result= issueTracker.findAll(component, IssueResolution.UNRESOLVED);
-		assertEquals(3, result.size();
+	@Test
+	public void testFindAllIssuesByResolutionShouldReturnThreeRecords() {
+		List<Issue>  result= issueTracker.findAllByResolution(component, IssueResolution.UNRESOLVED);
+
+		assertEquals(3, result.size());
 	}
 
 	@Test
-	public void testFindAllByType() {
-		List<Issue  result= issueTracker.findAll(component, IssueType.TASK);
-		assertEquals(2, result.size();
+	public void testFindAllIssuesByTypeShouldReturnTwoRecords() {
+		List<Issue> result= issueTracker.findAllByType(component, IssueType.TASK);
+
+		assertEquals(2, result.size());
 	}
+
 	@Test
-	public  void testFianAllByPriority() {
-		List<Issue  result= issueTracker.findAll(component, IssuePriority.TRIVIAL);
-		assertEquals(2, result.size();
-	}*/
+	public void testFindAllIssuesByPriorityShouldReturnTwoRecords() {
+		List<Issue>  result= issueTracker.findAllByPriority(component, IssuePriority.TRIVIAL);
+
+		assertEquals(2, result.size());
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testCreatesNewComponentShouldThrowIllegalArgumentException() {
+		Component component = new Component("test", "t", null);
+	}
 }

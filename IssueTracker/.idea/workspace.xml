@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/jUnitTesting/IssuesTrackerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IssueTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IssueTracker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/META-INF/IssueTracker.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/Component.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/GenerateId.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/Jira.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/ValidateNullValues.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/enums/IssuePriority.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/enums/IssueResolution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/enums/IssueStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/enums/IssueType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/interfaces/IIssue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/interfaces/IssueTracker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/Bug.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/Issue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/NewFeature.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/ScheduledIssue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/exceptions/InvalidReporterException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/com/jetbrains/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/com/jetbrains/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/IssueTracker/SampleIssueTrackerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/IssueTracker/TestUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jetbrains/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jetbrains/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/IssueTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IssueTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jira/Jira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jira/Jira.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SampleIssueTrackerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jUnitTesting/IssuesTrackerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jUnitTesting/IssuesTrackerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/IssueTracker/IssuesTrackerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/IssueTracker/IssuesTrackerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +71,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.IssuesTrackerTest">
     <configuration name="IssuesTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IssueTracker" />
       <option name="PACKAGE_NAME" value="" />
@@ -177,6 +150,7 @@
       <workItem from="1590259225036" duration="4723000" />
       <workItem from="1590341429554" duration="2040000" />
       <workItem from="1590408454139" duration="6369000" />
+      <workItem from="1590432664277" duration="432000" />
     </task>
     <servers />
   </component>
