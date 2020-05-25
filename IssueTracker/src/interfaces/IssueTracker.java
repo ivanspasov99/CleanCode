@@ -10,15 +10,16 @@ import issue.properties.IssueType;
 import issues.Issue;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public interface IssueTracker {
 
-    Issue[] findAllByStatus(Component component, IssueStatus status);
-    Issue[] findAllByPriority(Component component, IssuePriority priority);
-    Issue[] findAllByType(Component component, IssueType type);
-    Issue[] findAllByResolution(Component component, IssueResolution resolution);
+    List<Issue> findAllByStatus(Component component, IssueStatus status);
+    List<Issue> findAllByPriority(Component component, IssuePriority priority);
+    List<Issue> findAllByType(Component component, IssueType type);
+    List<Issue> findAllByResolution(Component component, IssueResolution resolution);
 
-    Issue[] findAllIssuesCreatedBetween(LocalDateTime startTime, LocalDateTime endTime);
-    Issue[] findAllBeforeDate(LocalDateTime dueTime);
+    List<Issue> findAllIssuesCreatedBetween(LocalDateTime startTime, LocalDateTime endTime);
+    List<Issue> findAllBeforeDate(LocalDateTime dueTime);
 
 }

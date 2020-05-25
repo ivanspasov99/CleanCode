@@ -1,133 +1,124 @@
 package jira;
 
+import components.Component;
+
 import interfaces.IssueTracker;
+
 import issues.Issue;
 
+import issue.properties.IssuePriority;
+import issue.properties.IssueResolution;
+import issue.properties.IssueStatus;
+import issue.properties.IssueType;
+
+import validators.Validator;
+
 import java.time.LocalDateTime;
+
 import java.util.List;
+import java.util.ArrayList;
 
 public class Jira implements IssueTracker {
-    // we can add Issues, to delete specific issues... etc
+    // we can do some operations with issues
+    // slower than issue[] class implementation
     private List<Issue> issues;
 
     public Jira(List<Issue> issues) {
-        ValidateNullValues.validatePar(new Object[] { issues } ); // checking if issues at all is not null
+        Validator.validateNullValues(issues);
+
         this.issues = issues;
     }
 
     public Jira() {
-        // init empty list
+        issues = new ArrayList<>();
     }
 
     @Override
-    public Issue[] findAll(Component component, IssueStatus status) {
-        int counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getComponent().getName().equals(component.getName()) && issues[i].getStatus() == status) {
-                counter++;
+    public List<Issue> findAllByStatus(Component component, IssueStatus status) {
+        List<Issue> filteredIssues = new ArrayList<>();
+
+        for (Issue issue: this.issues) {
+            if(isComponentEqual(issue, component) && issue.getStatus() == status) {
+                filteredIssues.add(issue);
             }
         }
-        Issue[] filteredIssues = new Issue[counter];
-        counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getComponent().getName().equals(component.getName()) && issues[i].getStatus() == status) {
-                filteredIssues[counter++] = issues[i];
-            }
-        }
+
         return filteredIssues;
     }
 
     @Override
-    public Issue[] findAll(Component component, IssuePriority priority) {
-        int counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getComponent().getName().equals(component.getName()) && issues[i].getPriority() == priority) {
-                counter++;
+    public List<Issue> findAllByPriority(Component component, IssuePriority priority) {
+        List<Issue> filteredIssues = new ArrayList<>();
+
+        for (Issue issue: this.issues) {
+            if(isComponentEqual(issue, component) && issue.getPriority() == priority) {
+                filteredIssues.add(issue);
             }
         }
-        Issue[] filteredIssues = new Issue[counter];
-        counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getComponent().getName().equals(component.getName()) && issues[i].getPriority() == priority) {
-                filteredIssues[counter++] = issues[i];
-            }
-        }
+
         return filteredIssues;
     }
 
     @Override
-    public Issue[] findAll(Component component, IssueType type) {
-        int counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if (issues[i] != null && issues[i].getComponent().getName().equals(component.getName()) && issues[i].getType() == type) {
-                counter++;
+    public List<Issue> findAllByType(Component component, IssueType type) {
+        List<Issue> filteredIssues = new ArrayList<>();
+
+        for (Issue issue: this.issues) {
+            if(isComponentEqual(issue, component) && issue.getType() == type) {
+                filteredIssues.add(issue);
             }
         }
-        Issue[] filteredIssues = new Issue[counter];
-        counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getComponent().getName().equals(component.getName()) && issues[i].getType() == type) {
-                filteredIssues[counter++] = issues[i];
-            }
-        }
+
         return filteredIssues;
     }
 
     @Override
-    public Issue[] findAll(Component component, IssueResolution resolution) {
-        int counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getComponent().getName().equals(component.getName()) && issues[i].getResolution() == resolution) {
-                counter++;
+    public List<Issue> findAllByResolution(Component component, IssueResolution resolution) {
+        List<Issue> filteredIssues = new ArrayList<>();
+
+        for (Issue issue: this.issues) {
+            if(isComponentEqual(issue, component) && issue.getResolution() == resolution) {
+                filteredIssues.add(issue);
             }
         }
-        Issue[] filteredIssues = new Issue[counter];
-        counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getComponent().getName().equals(component.getName()) && issues[i].getResolution() == resolution) {
-                filteredIssues[counter++] = issues[i];
-            }
-        }
+
         return filteredIssues;
     }
 
     @Override
-    public Issue[] findAllIssuesCreatedBetween(LocalDateTime startTime, LocalDateTime endTime) {
-        int counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getCreatedAt().isAfter(startTime) && this.issues[i].getCreatedAt().isBefore(endTime)) {
-                counter++;
+    public List<Issue> findAllIssuesCreatedBetween(LocalDateTime startTime, LocalDateTime endTime) {
+        List<Issue> filteredIssues = new ArrayList<>();
+
+        for (Issue issue: this.issues) {
+            if(isBetweenDates(issue, startTime, endTime)) {
+                filteredIssues.add(issue);
             }
         }
-        Issue[] filteredIssues = new Issue[counter];
-        counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i] != null && issues[i].getCreatedAt().isAfter(startTime) && this.issues[i].getCreatedAt().isBefore(endTime)) {
-                filteredIssues[counter++] = issues[i];
-            }
-        }
+
         return filteredIssues;
     }
+
     @Override
-    public Issue[] findAllBefore(LocalDateTime dueTime) {
-        int counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if(issues[i]!=null && !(issues[i] instanceof Bug)) {
-                counter++;
+    public List<Issue> findAllBeforeDate(LocalDateTime dueTime) {
+        List<Issue> filteredIssues = new ArrayList<>();
+
+        for (Issue issue: this.issues) {
+            if(issue.getCreatedAt().isBefore(dueTime)) {
+                filteredIssues.add(issue);
             }
         }
-        Issue[] filteredIssues = new Issue[counter];
-        counter = 0;
-        for (int i = 0; i < this.issues.length; i++) {
-            if((issues[i] instanceof Bug) || issues[i] == null) {
-                continue;
-            }
-            ScheduledIssue temp = (ScheduledIssue)issues[i];
-            if(!(temp.getDueTime().isBefore(dueTime))) {
-                continue;
-            }
-            filteredIssues[counter++] = temp;
-        }
+
         return filteredIssues;
+    }
+
+    private boolean isComponentEqual(Issue currentIssue, Component component) {
+        String issueComponentName = currentIssue.getComponent().getName();
+
+        return issueComponentName.equals(component.getName());
+    }
+    private boolean isBetweenDates(Issue issue, LocalDateTime startDate, LocalDateTime endDate) {
+        LocalDateTime createdAt = issue.getCreatedAt();
+
+        return createdAt.isAfter(startDate) && createdAt.isBefore(endDate);
     }
 }
