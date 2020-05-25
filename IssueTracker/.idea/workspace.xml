@@ -2,13 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/jUnitTesting/IssuesTrackerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/IIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IIssue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IssueTracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IssueTracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/META-INF/IssueTracker.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/Component.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/GenerateId.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/Jira.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/ValidateNullValues.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/enums/IssuePriority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/enums/IssueResolution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/enums/IssueStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/enums/IssueType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/interfaces/IIssue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/interfaces/IssueTracker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/Bug.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/Issue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/NewFeature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/ScheduledIssue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/bg/sofia/uni/fmi/jira/issues/exceptions/InvalidReporterException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/com/jetbrains/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/com/jetbrains/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/IssueTracker/SampleIssueTrackerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/IssueTracker/TestUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jetbrains/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jetbrains/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/interfaces/IssueTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IssueTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/Bug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Bug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/NewFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/NewFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jira/Jira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jira/Jira.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SampleIssueTrackerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestUtils.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,50 +98,50 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SampleIssueTrackerTest">
-    <configuration name="SampleIssueTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="IssuesTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IssueTracker" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="MAIN_CLASS_NAME" value="IssuesTrackerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleIssueTrackerTest.tesFindAllBeforeDueDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IssuesTrackerTest.tesFindAllBeforeDueDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IssueTracker" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="MAIN_CLASS_NAME" value="IssuesTrackerTest" />
       <option name="METHOD_NAME" value="tesFindAllBeforeDueDate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleIssueTrackerTest.testFianAllByPriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IssuesTrackerTest.testFianAllByPriority" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IssueTracker" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="MAIN_CLASS_NAME" value="IssuesTrackerTest" />
       <option name="METHOD_NAME" value="testFianAllByPriority" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleIssueTrackerTest.testFindAllBetween" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IssuesTrackerTest.testFindAllBetween" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IssueTracker" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="MAIN_CLASS_NAME" value="IssuesTrackerTest" />
       <option name="METHOD_NAME" value="testFindAllBetween" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SampleIssueTrackerTest.testFindAllByStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IssuesTrackerTest.testFindAllByStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IssueTracker" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SampleIssueTrackerTest" />
+      <option name="MAIN_CLASS_NAME" value="IssuesTrackerTest" />
       <option name="METHOD_NAME" value="testFindAllByStatus" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -127,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SampleIssueTrackerTest" />
-        <item itemvalue="JUnit.SampleIssueTrackerTest.tesFindAllBeforeDueDate" />
-        <item itemvalue="JUnit.SampleIssueTrackerTest.testFindAllByStatus" />
-        <item itemvalue="JUnit.SampleIssueTrackerTest.testFianAllByPriority" />
-        <item itemvalue="JUnit.SampleIssueTrackerTest.testFindAllBetween" />
+        <item itemvalue="JUnit.IssuesTrackerTest" />
+        <item itemvalue="JUnit.IssuesTrackerTest.tesFindAllBeforeDueDate" />
+        <item itemvalue="JUnit.IssuesTrackerTest.testFindAllByStatus" />
+        <item itemvalue="JUnit.IssuesTrackerTest.testFianAllByPriority" />
+        <item itemvalue="JUnit.IssuesTrackerTest.testFindAllBetween" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +176,7 @@
       <workItem from="1582403292595" duration="121000" />
       <workItem from="1590259225036" duration="4723000" />
       <workItem from="1590341429554" duration="2040000" />
-      <workItem from="1590408454139" duration="2750000" />
+      <workItem from="1590408454139" duration="6369000" />
     </task>
     <servers />
   </component>

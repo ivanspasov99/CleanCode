@@ -20,6 +20,6 @@ public interface IssueTracker {
     List<Issue> findAllByResolution(Component component, IssueResolution resolution);
 
     List<Issue> findAllIssuesCreatedBetween(LocalDateTime startTime, LocalDateTime endTime);
-    List<Issue> findAllBeforeDate(LocalDateTime dueTime);
+    List<Issue> findAllCreatedBeforeDate(LocalDateTime dueTime);
 
 }

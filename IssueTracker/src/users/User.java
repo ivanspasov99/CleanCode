@@ -2,6 +2,8 @@ package users;
 
 import validators.Validator;
 
+// we need to add more Users with different roles/properties
+
 public class User {
 
     private String name;
@@ -16,5 +18,4 @@ public class User {
     public String getName() {
         return name;
     }
-
 }

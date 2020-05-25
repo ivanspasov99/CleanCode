@@ -24,6 +24,7 @@ public class Jira implements IssueTracker {
     private List<Issue> issues;
 
     public Jira(List<Issue> issues) {
+        // assert there is no null values in issues
         Validator.validateNullValues(issues);
 
         this.issues = issues;
@@ -99,7 +100,7 @@ public class Jira implements IssueTracker {
     }
 
     @Override
-    public List<Issue> findAllBeforeDate(LocalDateTime dueTime) {
+    public List<Issue> findAllCreatedBeforeDate(LocalDateTime dueTime) {
         List<Issue> filteredIssues = new ArrayList<>();
 
         for (Issue issue: this.issues) {
@@ -110,6 +111,8 @@ public class Jira implements IssueTracker {
 
         return filteredIssues;
     }
+
+    // add function for
 
     private boolean isComponentEqual(Issue currentIssue, Component component) {
         String issueComponentName = currentIssue.getComponent().getName();
