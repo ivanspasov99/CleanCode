@@ -31,7 +31,6 @@ public abstract class Issue implements IIssue {
 
     private Component component;
 
-    private User reporter;
 
     private final String ID;
     private String description;
@@ -39,17 +38,12 @@ public abstract class Issue implements IIssue {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    Issue(IssuePriority priority, Component component, User reporter, String description) throws InvalidReporterException, IllegalArgumentException {
+    Issue(IssuePriority priority, Component component, String description) throws InvalidReporterException, IllegalArgumentException {
 
-        if(reporter == null) {
-            // requirements specific check
-            throw new InvalidReporterException("Please enter notNull value (reporter) ");
-        }
         Validator.validateNullValues(priority, component, description);
 
         initIssueProperties(priority);
 
-        this.reporter = reporter;
         this.component = component;
 
         this.description = description;
@@ -90,11 +84,6 @@ public abstract class Issue implements IIssue {
     @Override
     public String getDescription() {
         return description;
-    }
-
-    @Override
-    public User getReporter() {
-        return reporter;
     }
 
     @Override

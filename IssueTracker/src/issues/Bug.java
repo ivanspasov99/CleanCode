@@ -7,23 +7,29 @@ import exceptions.InvalidReporterException;
 import issue.properties.IssuePriority;
 import issue.properties.IssueType;
 
-import users.User;
-
+import users.Tester;
 
 public class Bug extends Issue {
-    // we can add end date to fix
-    // we can add developer to fix who will be assign by manager only...
+
     private final IssueType TYPE = IssueType.BUG;
 
-    public Bug(IssuePriority priority, Component component, User reporter, String description) throws InvalidReporterException {
+    private Tester reporter;
 
-        super(priority, component, reporter, description);
+    public Bug(IssuePriority priority, Component component, Tester reporter, String description) throws InvalidReporterException {
+
+        super(priority, component, description);
+
+        this.reporter = reporter;
 
     }
 
     @Override
     public IssueType getType() {
         return TYPE;
+    }
+
+    public Tester getReporter() {
+        return reporter;
     }
 
 }

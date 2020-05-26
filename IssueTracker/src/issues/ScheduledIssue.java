@@ -17,9 +17,9 @@ public abstract class ScheduledIssue extends Issue {
 
     private final LocalDateTime dueTime;
 
-    public ScheduledIssue(IssuePriority priority, Component component, User reporter, String description, LocalDateTime dueTime) throws InvalidReporterException, IllegalArgumentException {
+    public ScheduledIssue(IssuePriority priority, Component component, String description, LocalDateTime dueTime) throws InvalidReporterException, IllegalArgumentException {
 
-        super(priority, component, reporter, description);
+        super(priority, component, description);
 
         Validator.validateNullValues(dueTime);
 

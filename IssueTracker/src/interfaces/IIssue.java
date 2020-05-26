@@ -9,7 +9,7 @@ import issue.properties.IssueResolution;
 import issue.properties.IssueStatus;
 
 import issue.properties.IssueType;
-import users.User;
+
 
 public interface IIssue {
 
@@ -19,8 +19,6 @@ public interface IIssue {
 
     String getId();
     String getDescription();
-
-    User getReporter();
 
     Component getComponent();
 

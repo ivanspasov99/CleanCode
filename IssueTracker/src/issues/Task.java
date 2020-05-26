@@ -3,9 +3,12 @@ package issues;
 import components.Component;
 
 import exceptions.InvalidReporterException;
+
 import issue.properties.IssuePriority;
 import issue.properties.IssueType;
-import users.User;
+
+import users.Developer;
+
 
 
 import java.time.LocalDateTime;
@@ -15,9 +18,13 @@ public class Task extends ScheduledIssue {
     // we do not need reporter here
     private final IssueType TYPE = IssueType.TASK;
 
-    public Task(IssuePriority priority, Component component, User reporter, String description, LocalDateTime dueTime) throws InvalidReporterException {
+    private Developer developer;
 
-        super(priority, component, reporter, description, dueTime);
+    private Bug currentBug;
+
+    public Task(IssuePriority priority, Component component, String description, LocalDateTime dueTime) throws InvalidReporterException {
+
+        super(priority, component, description, dueTime);
 
     }
 

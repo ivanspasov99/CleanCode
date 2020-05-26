@@ -22,7 +22,7 @@ import issue.properties.IssuePriority;
 import issue.properties.IssueResolution;
 import issue.properties.IssueType;
 
-import users.User;
+import users.*;
 
 
 import java.time.LocalDateTime;
@@ -36,9 +36,9 @@ public class IssuesTrackerTest {
 
 	private static IssueTracker issueTracker;
 
-	private static User firstUser;
+	private static User reporter;
 
-	private static User secondUser;
+	private static User developer;
 
 	private static Component component;
 
@@ -47,13 +47,13 @@ public class IssuesTrackerTest {
 
 		issues = new ArrayList<>();
 
-		firstUser = new User("Ivan");
-		secondUser = new User("Pesho");
-		component = new Component("Component-Pesho", "CP", secondUser);
+		reporter = new Tester("Ivan", "Bulgaria", "Sega", TesterType.QUALITY);
+		developer = new Developer("Pesho", "Bulgaria", "SAP", DeveloperJobPosition.MID, "Java, JS");
+		component = new Component("Component-Pesho", "CP", developer);
 
-		issues.add(new Bug(IssuePriority.MAJOR, component, firstUser, "Big Bug"));
-		issues.add(new Task(IssuePriority.TRIVIAL, component, firstUser, "Fix UI component", LocalDateTime.now()));
-		issues.add(new Task(IssuePriority.TRIVIAL, component, firstUser, "Fix Back And component", LocalDateTime.now().plusDays(20)));
+		issues.add(new Bug(IssuePriority.MAJOR, component, reporter, "Big Bug"));
+		//issues.add(new Task(IssuePriority.TRIVIAL, component, firstUser, "Fix UI component", LocalDateTime.now()));
+		//issues.add(new Task(IssuePriority.TRIVIAL, component, firstUser, "Fix Back And component", LocalDateTime.now().plusDays(20)));
 
 		issues.get(0).setStatus(IssueStatus.IN_PROGRESS);
 
