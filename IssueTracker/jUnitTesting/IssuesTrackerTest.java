@@ -10,7 +10,6 @@ import issue.properties.IssueStatus;
 import issues.Bug;
 import issues.Issue;
 
-import issues.Task;
 import jira.Jira;
 
 import org.junit.BeforeClass;
@@ -23,6 +22,9 @@ import issue.properties.IssueResolution;
 import issue.properties.IssueType;
 
 import users.*;
+import users.enums.DeveloperJobPosition;
+import users.enums.TesterType;
+import users.enums.User;
 
 
 import java.time.LocalDateTime;

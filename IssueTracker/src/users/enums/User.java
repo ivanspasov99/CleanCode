@@ -1,4 +1,4 @@
-package users;
+package users.enums;
 
 import validators.Validator;
 

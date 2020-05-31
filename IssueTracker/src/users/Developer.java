@@ -1,5 +1,8 @@
 package users;
 
+import users.enums.DeveloperJobPosition;
+import users.enums.User;
+import users.enums.UserRole;
 import validators.Validator;
 
 public class Developer extends User {

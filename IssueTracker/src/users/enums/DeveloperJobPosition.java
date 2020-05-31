@@ -1,4 +1,4 @@
-package users;
+package users.enums;
 
 public enum DeveloperJobPosition {
     SENIOR,

@@ -4,14 +4,20 @@
     <list default="true" id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jUnitTesting/IssuesTrackerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jUnitTesting/IssuesTrackerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/users/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/IssueTracker/IssuesTrackerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/IIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/IIssue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/Bug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Bug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/InvalidReporterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/InvalidReporterException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/issues/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Issue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/issues/NewFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/NewFeature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/issues/ScheduledIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/ScheduledIssue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/issues/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jira/Jira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jira/Jira.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Developer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/DeveloperJobPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/enums/DeveloperJobPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/TesterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/enums/TesterType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/enums/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/enums/UserRole.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -159,6 +165,7 @@
       <workItem from="1590408454139" duration="6369000" />
       <workItem from="1590432664277" duration="432000" />
       <workItem from="1590511310410" duration="4029000" />
+      <workItem from="1590949958118" duration="4276000" />
     </task>
     <servers />
   </component>

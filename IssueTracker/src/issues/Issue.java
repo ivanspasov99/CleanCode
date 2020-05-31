@@ -11,8 +11,6 @@ import issue.properties.IssueStatus;
 
 import interfaces.IIssue;
 
-import users.User;
-
 import validators.Validator;
 
 import java.time.LocalDateTime;
@@ -30,7 +28,6 @@ public abstract class Issue implements IIssue {
     private IssueResolution resolution = IssueResolution.UNRESOLVED;
 
     private Component component;
-
 
     private final String ID;
     private String description;

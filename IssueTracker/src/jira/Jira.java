@@ -19,8 +19,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Jira implements IssueTracker {
-    // we can do some operations with issues
-    // slower than issue[] class implementation
+
     private List<Issue> issues;
 
     public Jira(List<Issue> issues) {
@@ -111,8 +110,6 @@ public class Jira implements IssueTracker {
 
         return filteredIssues;
     }
-
-    // add function for
 
     private boolean isComponentEqual(Issue currentIssue, Component component) {
         String issueComponentName = currentIssue.getComponent().getName();

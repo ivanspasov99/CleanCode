@@ -1,5 +1,8 @@
 package users;
 
+import users.enums.TesterType;
+import users.enums.User;
+
 public class Tester extends User {
 
     private final UserRole ROLE;
