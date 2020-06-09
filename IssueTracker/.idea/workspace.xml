@@ -4,20 +4,25 @@
     <list default="true" id="300110ee-7571-497a-8116-e4fc42686a22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jUnitTesting/IssuesTrackerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/jUnitTesting/IssuesTrackerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/com/jetbrains/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/com/jetbrains/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/exceptions/InvalidReporterException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/exceptions/InvalidReporterException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/interfaces/IIssue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/interfaces/IIssue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/issues/Bug.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/issues/Bug.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/issues/Issue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/issues/Issue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/issues/NewFeature.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/issues/NewFeature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/issues/ScheduledIssue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/issues/ScheduledIssue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/issues/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/issues/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/jira/Jira.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/jira/Jira.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/users/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IssueTracker/users/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IssueTracker/users/UserRole.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jetbrains/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jetbrains/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exceptions/InvalidReporterException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exceptions/InvalidReporterException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Issue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/NewFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/NewFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/ScheduledIssue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/ScheduledIssue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/issues/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/issues/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jira/Jira.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jira/Jira.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jira/JiraFiltration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jira/JiraFiltration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/Developer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Developer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/DeveloperJobPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/enums/DeveloperJobPosition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Manager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/users/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/Tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/TesterType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/enums/TesterType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/enums/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/UserRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/enums/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/enums/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/User.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +90,19 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.IssuesTrackerTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jetbrains.Main" />
+      <module name="IssueTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jetbrains.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IssuesTrackerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IssueTracker" />
       <option name="PACKAGE_NAME" value="" />
@@ -114,16 +132,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IssuesTrackerTest.testFindAllBetween" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IssueTracker" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="IssuesTrackerTest" />
-      <option name="METHOD_NAME" value="testFindAllBetween" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="IssuesTrackerTest.testFindAllByStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="IssueTracker" />
       <option name="PACKAGE_NAME" value="" />
@@ -137,10 +145,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.IssuesTrackerTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.IssuesTrackerTest.tesFindAllBeforeDueDate" />
         <item itemvalue="JUnit.IssuesTrackerTest.testFindAllByStatus" />
         <item itemvalue="JUnit.IssuesTrackerTest.testFianAllByPriority" />
-        <item itemvalue="JUnit.IssuesTrackerTest.testFindAllBetween" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +174,10 @@
       <workItem from="1590432664277" duration="432000" />
       <workItem from="1590511310410" duration="4029000" />
       <workItem from="1590949958118" duration="4276000" />
+      <workItem from="1590999466962" duration="303000" />
+      <workItem from="1591025291630" duration="811000" />
+      <workItem from="1591605310357" duration="2539000" />
+      <workItem from="1591607872002" duration="69000" />
     </task>
     <servers />
   </component>

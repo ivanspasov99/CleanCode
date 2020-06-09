@@ -1,6 +1,6 @@
 package components;
 
-import users.enums.User;
+import users.User;
 
 import validators.Validator;
 

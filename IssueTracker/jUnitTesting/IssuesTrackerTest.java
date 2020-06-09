@@ -3,13 +3,13 @@ import static org.junit.Assert.assertEquals;
 
 
 import exceptions.InvalidReporterException;
-
 import interfaces.IssueTracker;
 
 import issue.properties.IssueStatus;
 import issues.Bug;
 import issues.Issue;
 
+import issues.Task;
 import jira.Jira;
 
 import org.junit.BeforeClass;
@@ -24,7 +24,7 @@ import issue.properties.IssueType;
 import users.*;
 import users.enums.DeveloperJobPosition;
 import users.enums.TesterType;
-import users.enums.User;
+import users.User;
 
 
 import java.time.LocalDateTime;
@@ -38,24 +38,32 @@ public class IssuesTrackerTest {
 
 	private static IssueTracker issueTracker;
 
-	private static User reporter;
+	private static Tester reporter;
 
-	private static User developer;
+	private static Developer developer;
+
+	private static Manager manager;
 
 	private static Component component;
 
+	private static Bug bug;
+
 	@BeforeClass
-	public static void setUp() throws InvalidReporterException, IllegalArgumentException {
+	public static void setUp() throws IllegalArgumentException, InvalidReporterException {
 
 		issues = new ArrayList<>();
 
 		reporter = new Tester("Ivan", "Bulgaria", "Sega", TesterType.QUALITY);
 		developer = new Developer("Pesho", "Bulgaria", "SAP", DeveloperJobPosition.MID, "Java, JS");
+		manager = new Manager("Pesho", "Bulgaria", "SAP");
+
 		component = new Component("Component-Pesho", "CP", developer);
 
-		issues.add(new Bug(IssuePriority.MAJOR, component, reporter, "Big Bug"));
-		//issues.add(new Task(IssuePriority.TRIVIAL, component, firstUser, "Fix UI component", LocalDateTime.now()));
-		//issues.add(new Task(IssuePriority.TRIVIAL, component, firstUser, "Fix Back And component", LocalDateTime.now().plusDays(20)));
+		bug = new Bug(IssuePriority.MAJOR, component, reporter, "Big Bug");
+
+		issues.add(bug);
+		issues.add(new Task(IssuePriority.TRIVIAL, component, bug, manager, "Fix UI component", LocalDateTime.now()));
+		issues.add(new Task(IssuePriority.TRIVIAL, component, bug, manager, "Fix Back And component", LocalDateTime.now().plusDays(20)));
 
 		issues.get(0).setStatus(IssueStatus.IN_PROGRESS);
 

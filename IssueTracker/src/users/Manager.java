@@ -1,6 +1,5 @@
 package users;
 
-import users.enums.User;
 import users.enums.UserRole;
 
 public class Manager extends User {

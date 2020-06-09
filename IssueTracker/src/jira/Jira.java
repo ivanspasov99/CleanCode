@@ -22,11 +22,15 @@ public class Jira implements IssueTracker {
 
     private List<Issue> issues;
 
+    JiraFiltration jiraFiltration;
+
     public Jira(List<Issue> issues) {
         // assert there is no null values in issues
         Validator.validateNullValues(issues);
 
         this.issues = issues;
+
+        JiraFiltration jiraFiltration = new JiraFiltration();
     }
 
     public Jira() {
@@ -35,90 +39,32 @@ public class Jira implements IssueTracker {
 
     @Override
     public List<Issue> findAllByStatus(Component component, IssueStatus status) {
-        List<Issue> filteredIssues = new ArrayList<>();
-
-        for (Issue issue: this.issues) {
-            if(isComponentEqual(issue, component) && issue.getStatus() == status) {
-                filteredIssues.add(issue);
-            }
-        }
-
-        return filteredIssues;
+        return jiraFiltration.findAllByStatus(issues, component, status);
     }
 
     @Override
     public List<Issue> findAllByPriority(Component component, IssuePriority priority) {
-        List<Issue> filteredIssues = new ArrayList<>();
-
-        for (Issue issue: this.issues) {
-            if(isComponentEqual(issue, component) && issue.getPriority() == priority) {
-                filteredIssues.add(issue);
-            }
-        }
-
-        return filteredIssues;
+        return jiraFiltration.findAllByPriority(issues, component, priority);
     }
 
     @Override
     public List<Issue> findAllByType(Component component, IssueType type) {
-        List<Issue> filteredIssues = new ArrayList<>();
-
-        for (Issue issue: this.issues) {
-            if(isComponentEqual(issue, component) && issue.getType() == type) {
-                filteredIssues.add(issue);
-            }
-        }
-
-        return filteredIssues;
+        return jiraFiltration.findAllByType(issues, component, type);
     }
 
     @Override
     public List<Issue> findAllByResolution(Component component, IssueResolution resolution) {
-        List<Issue> filteredIssues = new ArrayList<>();
-
-        for (Issue issue: this.issues) {
-            if(isComponentEqual(issue, component) && issue.getResolution() == resolution) {
-                filteredIssues.add(issue);
-            }
-        }
-
-        return filteredIssues;
+        return jiraFiltration.findAllByResolution(issues, component, resolution);
     }
 
     @Override
     public List<Issue> findAllIssuesCreatedBetween(LocalDateTime startTime, LocalDateTime endTime) {
-        List<Issue> filteredIssues = new ArrayList<>();
-
-        for (Issue issue: this.issues) {
-            if(isBetweenDates(issue, startTime, endTime)) {
-                filteredIssues.add(issue);
-            }
-        }
-
-        return filteredIssues;
+       return jiraFiltration.findAllIssuesCreatedBetween(issues, startTime, endTime);
     }
 
     @Override
     public List<Issue> findAllCreatedBeforeDate(LocalDateTime dueTime) {
-        List<Issue> filteredIssues = new ArrayList<>();
-
-        for (Issue issue: this.issues) {
-            if(issue.getCreatedAt().isBefore(dueTime)) {
-                filteredIssues.add(issue);
-            }
-        }
-
-        return filteredIssues;
+        return jiraFiltration.findAllCreatedBeforeDate(issues, dueTime);
     }
 
-    private boolean isComponentEqual(Issue currentIssue, Component component) {
-        String issueComponentName = currentIssue.getComponent().getName();
-
-        return issueComponentName.equals(component.getName());
-    }
-    private boolean isBetweenDates(Issue issue, LocalDateTime startDate, LocalDateTime endDate) {
-        LocalDateTime createdAt = issue.getCreatedAt();
-
-        return createdAt.isAfter(startDate) && createdAt.isBefore(endDate);
-    }
 }
